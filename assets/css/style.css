@@ -299,7 +299,7 @@ footer {
 /* About - columnas ES/EN */
 .about-columns {
   display: flex;
-  gap: 20px; /* espacio entre columnas */
+  gap: 20px;
 }
 
 .about-column {
@@ -319,7 +319,8 @@ footer {
 
   .about-column:first-child {
     border-right: none;
-    border-bottom: 2px solid #ccc; /* opcional: línea horizontal en móvil */
+    border-bottom: 2px solid #ccc; 
     margin-bottom: 20px;
   }
 }
+
