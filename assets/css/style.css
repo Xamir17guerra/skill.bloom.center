@@ -296,3 +296,30 @@ footer {
   border-radius: 10px;
   overflow: hidden;
 }
+/* About - columnas ES/EN */
+.about-columns {
+  display: flex;
+  gap: 20px; /* espacio entre columnas */
+}
+
+.about-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.about-column:first-child {
+  border-right: 2px solid #ccc; /* línea vertical divisoria */
+}
+
+/* Responsive: en móvil las columnas se apilan */
+@media (max-width: 768px) {
+  .about-columns {
+    flex-direction: column;
+  }
+
+  .about-column:first-child {
+    border-right: none;
+    border-bottom: 2px solid #ccc; /* opcional: línea horizontal en móvil */
+    margin-bottom: 20px;
+  }
+}
